@@ -1,4 +1,4 @@
-#Sorting
+#python#Sorting
 
 def bubble_sort(lst):
     """Returns a sorted list using a optimized bubble sort algorithm
@@ -7,7 +7,16 @@ def bubble_sort(lst):
         >>> bubble_sort([3, 5, 7, 2, 4, 1])
         [1, 2, 3, 4, 5, 7]
     """
-    pass
+    for i in range(len(lst)-1):
+        made_swap=False
+        for j in range(len(lst)-1-i):
+            if lst[j]>lst[j+1]:
+                lst[j+1], lst[j] = lst[j], lst[j+1]
+                made_swap=True
+        if made_swap!=True:
+            break;
+    
+    print lst
 
 
 def merge_lists(list1, list2):
@@ -17,8 +26,19 @@ def merge_lists(list1, list2):
     >>> merge_lists([1, 3, 9], [4, 7, 11])
     [1, 3, 4, 7, 9, 11]
     """
-
-    pass
+    results_list = []
+    while (len(list1) != 0) or (len(list2)!=0):
+        if len(list1)==0:
+            results_list.append(list2.pop(0)) # Should I return all list2
+        elif len(list2)==0:
+            results_list.append(list1.pop(0)) # Same all list1?
+        elif list1[0] < list2[0]:
+            results_list.append(list1.pop(0))
+        else:
+            results_list.append(list2.pop(0))
+    return results_list
+            
+            
 
 
 ##########ADVANCED##########
