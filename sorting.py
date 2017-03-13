@@ -55,7 +55,14 @@ def merge_sort(lst):
     >>> merge_sort([6, 2, 3, 9, 0, 1])
     [0, 1, 2, 3, 6, 9]
     """
-    pass
+    if len(lst) < 2:
+        return lst
+        
+    mid_index = int(len(lst)/2)
+    list1 = merge_sort(lst[:mid_index])
+    list2 = merge_sort(lst[mid_index:])
+    
+    return merge_lists(list1, list2)
 
 
 
