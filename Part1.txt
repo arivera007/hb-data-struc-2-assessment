@@ -1,0 +1,36 @@
+PART !.
+
+RECURSION
+
+1. Recursion is a programming technique used for problems where repetition and branching is found.
+It consists on declaring a function that calls itself until a base case or break case is found to breake
+the "loop" or recursion.
+
+2. A base case is needed to stop the recursion. It is the case where the deepest level of the problem
+is reached.
+
+
+GRAPHS
+
+1. A graph is a set of nodes linked together. They could go or not have a direction from node to node.
+Nodes can be connected to several nodes.
+
+2. A tree is like a restricted graph. It is directed, and a node can only have one parent.
+
+3. A super good example of a graph is like connections on linkedIn or friends or Facebook.
+
+
+SORTING
+
+1. Basically, big numbers bubble up.
+It is acomplishe with two passes of the whole structure. One for bubbling one element. Another one to cover all elments.
+It compares two by two elements and it one is bigger, they switch so that bigger is on the right.
+
+2. Merge sorts works by first breaking a list into a one element list, which will be by definition sorted.
+Recursion is used to get this one elment lists.
+With these sorted lists, it get merged by comparing the "top" of each list into a new list.
+
+3. For quick sort, we get a pivot number, hopefully in the middle (in value).
+Then we compare each element against the pivot, and move to one side or the other.
+
+
